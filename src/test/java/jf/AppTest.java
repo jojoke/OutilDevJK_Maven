@@ -19,6 +19,7 @@ public class AppTest
     {
         super( testName );
     }
+    
 
     /**
      * @return the suite of tests being tested
@@ -33,6 +34,10 @@ public class AppTest
      */
     public void testApp()
     {
+    	App test1 = new App(); 
         assertTrue( true );
+        assertEquals(5, test1.max(4, 5));
+        assertEquals(5, test1.max(5, 4));
+        
     }
 }
